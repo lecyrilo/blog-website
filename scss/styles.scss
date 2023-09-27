@@ -1,5 +1,5 @@
 .navbar .btn-outline-light:hover {
-  color: var(--bs-dark-);
+  color: var(--bs-dark);
 }
 
 .header {
@@ -11,7 +11,7 @@
     max-width: 1040px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
   .hero .image-container {
     display: flex;
     justify-content: center;
@@ -41,4 +41,38 @@ top:0;
 height: 400px;
 width: 100%;
 border: none;
+}
+
+
+/* ...  CSS ... */
+
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+      display: flex !important;
+      justify-content: center;
+      flex-direction: row !important;
+  }
+
+  .navbar-nav {
+      flex-direction: row !important;
+  }
+
+  .navbar-nav .nav-item {
+      margin: 0 10px;
+  }
+
+  .navbar-toggler {
+      position: relative;
+      z-index: 2;
+  }
+
+  .navbar-collapse {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 1;
+  }
 }
